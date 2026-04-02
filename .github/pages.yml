@@ -1,1 +1,173 @@
-{"source":{"branch":"main"}}
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Seoul 2026 | 🇰🇷</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/framer-motion@10.16.4/dist/framer-motion.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@500;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', 'Noto Sans TC', sans-serif;
+            background-color: #F9F9F8;
+            color: #333;
+            -webkit-font-smoothing: antialiased;
+        }
+        .serif { font-family: 'Noto Serif TC', serif; }
+        .glass {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        .day-card {
+            transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .day-card:active { transform: scale(0.98); }
+        .sticky-header {
+            position: sticky;
+            top: 0;
+            z-index: 50;
+        }
+    </style>
+</head>
+<body class="pb-20">
+
+    <!-- Header -->
+    <header class="p-8 pt-12">
+        <p class="text-xs tracking-[0.2em] text-gray-400 uppercase mb-2 text-center">Spring Journey 2026</p>
+        <h1 class="serif text-4xl text-center font-bold tracking-tight text-stone-800">首爾漫遊手冊</h1>
+        <div class="flex justify-center gap-4 mt-6">
+            <div class="glass px-4 py-2 rounded-full text-[10px] tracking-widest text-stone-500 uppercase">04.29 — 05.06</div>
+        </div>
+    </header>
+
+    <!-- Quick Info Grid -->
+    <section class="px-6 mb-10">
+        <div class="grid grid-cols-2 gap-3">
+            <div class="glass p-4 rounded-2xl">
+                <p class="text-[10px] text-stone-400 uppercase mb-1">Accommodation A</p>
+                <p class="text-sm font-medium">明洞區域 (D1-3)</p>
+            </div>
+            <div class="glass p-4 rounded-2xl">
+                <p class="text-[10px] text-stone-400 uppercase mb-1">Accommodation B</p>
+                <p class="text-sm font-medium">鐘路3街 (D4-7)</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline -->
+    <main class="px-6 space-y-8">
+        
+        <!-- Day 1 -->
+        <div class="day-card">
+            <div class="flex items-baseline gap-3 mb-4">
+                <h2 class="serif text-2xl">Day 1</h2>
+                <span class="text-xs text-stone-400">04/29 Wed · 12°C - 21°C</span>
+            </div>
+            <div class="bg-white rounded-3xl p-6 shadow-sm border border-stone-100">
+                <p class="text-stone-400 text-xs mb-3 font-semibold uppercase tracking-wider">明洞巡禮</p>
+                <ul class="space-y-4">
+                    <li class="flex gap-3">
+                        <span class="w-1.5 h-1.5 bg-stone-200 rounded-full mt-2 shrink-0"></span>
+                        <p class="text-[15px] leading-relaxed">一品香換錢 & 南山塔夕陽</p>
+                    </li>
+                    <li class="flex gap-3">
+                        <span class="w-1.5 h-1.5 bg-stone-200 rounded-full mt-2 shrink-0"></span>
+                        <p class="text-[15px] leading-relaxed font-semibold underline decoration-stone-200 underline-offset-4">匠人鐵板雞 (必點起司)</p>
+                    </li>
+                </ul>
+                <a href="https://www.google.com/maps/search/Myeongdong" class="mt-6 block w-full py-3 bg-stone-900 text-white text-center rounded-xl text-xs tracking-widest uppercase active:bg-stone-700 transition-colors">Open Navigation</a>
+            </div>
+        </div>
+
+        <!-- Day 3 (Highlight) -->
+        <div class="day-card">
+            <div class="flex items-baseline gap-3 mb-4">
+                <h2 class="serif text-2xl">Day 3</h2>
+                <span class="text-xs text-stone-400">05/01 Fri · 13°C - 23°C</span>
+            </div>
+            <div class="bg-stone-900 rounded-3xl p-6 shadow-xl text-white">
+                <p class="text-stone-400 text-[10px] mb-3 font-semibold uppercase tracking-wider">Everland Day</p>
+                <h3 class="serif text-xl mb-4">愛寶樂園冒險</h3>
+                <div class="space-y-3 opacity-90 text-sm">
+                    <p>🎢 T-Express 木製雲霄飛車</p>
+                    <p>🐼 熊貓世界 (看福寶家族)</p>
+                    <p>👗 校服體驗 (Gyobok)</p>
+                </div>
+                <div class="mt-6 pt-4 border-t border-white/10 flex justify-between items-center text-[10px] tracking-widest uppercase text-stone-400">
+                    <span>Important</span>
+                    <span>勞動節人潮預警</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Day 5 -->
+        <div class="day-card">
+            <div class="flex items-baseline gap-3 mb-4">
+                <h2 class="serif text-2xl">Day 5</h2>
+                <span class="text-xs text-stone-400">05/03 Sun · 12°C - 19°C</span>
+            </div>
+            <div class="bg-white rounded-3xl p-6 shadow-sm border border-stone-100">
+                <p class="text-stone-400 text-xs mb-3 font-semibold uppercase tracking-wider">歷史與美食</p>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="p-3 bg-stone-50 rounded-xl">
+                        <p class="text-[10px] text-stone-400 uppercase">Morning</p>
+                        <p class="text-xs mt-1">London Bagel Museum (早點排隊)</p>
+                    </div>
+                    <div class="p-3 bg-stone-50 rounded-xl">
+                        <p class="text-[10px] text-stone-400 uppercase">Afternoon</p>
+                        <p class="text-xs mt-1">昌德宮秘苑 (需預約)</p>
+                    </div>
+                </div>
+                <div class="mt-4 space-y-2">
+                    <p class="text-sm">🥢 晚餐推薦：<span class="font-bold">安主村 (Anju Village)</span></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Day 6 -->
+        <div class="day-card">
+            <div class="flex items-baseline gap-3 mb-4">
+                <h2 class="serif text-2xl">Day 6</h2>
+                <span class="text-xs text-stone-400">05/04 Mon · 13°C - 22°C</span>
+            </div>
+            <div class="bg-white rounded-3xl p-6 shadow-sm border border-stone-100">
+                <p class="text-stone-400 text-xs mb-3 font-semibold uppercase tracking-wider">聖水洞文青行</p>
+                <div class="space-y-4">
+                    <div class="flex items-center justify-between">
+                        <span class="text-sm">Beton 鹽麵包</span>
+                        <span class="text-[10px] bg-stone-100 px-2 py-1 rounded">必吃</span>
+                    </div>
+                    <div class="flex items-center justify-between">
+                        <span class="text-sm">Kkubdang 豬肩肉</span>
+                        <span class="text-[10px] bg-amber-50 text-amber-700 px-2 py-1 rounded">米其林</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Floating Footer -->
+    <nav class="fixed bottom-6 left-1/2 -translate-x-1/2 w-[90%] max-w-md">
+        <div class="glass rounded-2xl p-4 shadow-2xl flex justify-around items-center">
+            <button class="flex flex-col items-center gap-1">
+                <div class="w-1.5 h-1.5 bg-stone-800 rounded-full"></div>
+                <span class="text-[10px] uppercase tracking-tighter font-bold">Schedule</span>
+            </button>
+            <div class="h-4 w-px bg-stone-200"></div>
+            <button class="flex flex-col items-center gap-1 opacity-40">
+                <div class="w-1.5 h-1.5 bg-transparent rounded-full border border-stone-800"></div>
+                <span class="text-[10px] uppercase tracking-tighter">Budget</span>
+            </button>
+            <div class="h-4 w-px bg-stone-200"></div>
+            <button class="flex flex-col items-center gap-1 opacity-40">
+                <div class="w-1.5 h-1.5 bg-transparent rounded-full border border-stone-800"></div>
+                <span class="text-[10px] uppercase tracking-tighter">Maps</span>
+            </button>
+        </div>
+    </nav>
+
+</body>
+</html>
